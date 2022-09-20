@@ -13,4 +13,15 @@ function BlogPost() {
   );
 }
 
+function ParentComponent(){
+  //passing prop to a childcomponent
+  return <ChildComponent text ="Hello" number={2}/>
+}
+
+function ChildComponent(props){
+  return <div>
+    {props.text}{props.number}
+  </div>
+}
+
 export default BlogPost;
